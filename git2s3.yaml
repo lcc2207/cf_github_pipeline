@@ -93,26 +93,6 @@ Conditions:
     - Fn::Equals:
       - Ref: ApiSecret
       - ''
-  # UseCustomDomain:
-  #   Fn::Not:
-  #   - Fn::Equals:
-  #     - Ref: CustomDomainName
-  #     - ''
-  # UseGitToken:
-  #   Fn::Not:
-  #   - Fn::Equals:
-  #     - Ref: GitToken
-  #     - ''
-  # UseOauthKey:
-  #   Fn::Not:
-  #   - Fn::Equals:
-  #     - Ref: OauthKey
-  #     - ''
-  # UseOauthSecret:
-  #   Fn::Not:
-  #   - Fn::Equals:
-  #     - Ref: OauthSecret
-  #     - ''
   AutoGenOutputBucketName:
     Fn::Not:
     - Fn::Equals:
